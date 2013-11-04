@@ -1,0 +1,46 @@
+{
+  "name": "generator-angular-phonegap-seed",
+  "version": "0.1.0",
+  "description": "A Yeoman generator for getting started with PhoneGap and AngularJS.",
+  "keywords": [
+    "yeoman-generator",
+    "yeoman",
+    "angular",
+    "phonegap",
+    "seed",
+    "angular-phonegap-seed"
+  ],
+  "homepage": "https://github.com/thewildpendulum/generator-angular-phonegap-seed",
+  "bugs": "https://github.com/thewildpendulum/generator-angular-phonegap-seed/issues",
+  "author": {
+    "name": "Tim Hemphill",
+    "email": "trhemphill@gmail.com",
+    "url": "https://github.com/thewildpendulum"
+  },
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thewildpendulum/generator-angular-phonegap-seed.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "yeoman-generator": "~0.13.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.12.0"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0-rc.1"
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1.2.10"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}
