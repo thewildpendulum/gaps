@@ -78,7 +78,7 @@ AngularPhonegapSeedGenerator.prototype.projectFiles = function projectFiles() {
 AngularPhonegapSeedGenerator.prototype.getAngularUnstable = function getAngularUnstable() {
     var cb = this.async();
 
-    this.fetch('http://code.angularjs.org/1.2.0-rc.3/angular.js',
+    this.fetch('http://ci.angularjs.org/job/angular.js-angular-master/lastSuccessfulBuild/artifact/build/angular.js',
                 'www/lib/angular/angular.js',
                 function (err) {
                     if (err) {
@@ -92,7 +92,7 @@ AngularPhonegapSeedGenerator.prototype.getAngularUnstable = function getAngularU
 AngularPhonegapSeedGenerator.prototype.getAngularRoute = function getAngularRoute() {
     var cb = this.async();
 
-    this.fetch('http://code.angularjs.org/1.2.0-rc.3/angular-route.js', 
+    this.fetch('http://ci.angularjs.org/job/angular.js-angular-master/lastSuccessfulBuild/artifact/build/angular-route.js',
                 'www/lib/angular/angular-route.js',
                 function (err) {
                     if (err) {
