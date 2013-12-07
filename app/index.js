@@ -10,7 +10,7 @@ AngularPhonegapSeedGenerator = module.exports = function AngularPhonegapSeedGene
     yeoman.generators.Base.apply(this, arguments);
 
     this.on('end', function () {
-        this.installDependencies({ skipInstall: true });
+        this.installDependencies();
     });
 
     this.pkg = JSON.parse(this.readFileAsString(path.join(__dirname, '../package.json')));
@@ -26,8 +26,6 @@ AngularPhonegapSeedGenerator.prototype.greet = function greet() {
 AngularPhonegapSeedGenerator.prototype.phonegapCheck = function phonegapCheck() {
     // check this dir contains www
     var list = fs.readdirSync(process.cwd());
-
-    // console.log("Angular-Phonegap-Seed");
 
     if (list.indexOf('www') === -1) {
         console.log('This generator must be run from the root of a PhoneGap project, but we don\'t seem to be in one.');
@@ -52,11 +50,11 @@ AngularPhonegapSeedGenerator.prototype.askProjectName = function askProjectName(
     }.bind(this));
 };
 
-// AngularPhonegapSeedGenerator.prototype.app = function app() {
-//     // dependencies
-//     this.copy('_package.json', 'package.json');
-//     this.copy('_bower.json', 'bower.json');
-// };
+AngularPhonegapSeedGenerator.prototype.app = function app() {
+    // dependencies
+    this.copy('_package.json', 'package.json');
+    this.copy('_bower.json', 'bower.json');
+};
 
 AngularPhonegapSeedGenerator.prototype.makeDirs = function makeDirs() {
     // create lib and partials directories
@@ -102,7 +100,3 @@ AngularPhonegapSeedGenerator.prototype.getAngularRoute = function getAngularRout
                     cb();
                 });
 };
-
-// AngularPhonegapSeedGenerator.prototype.runtime = function runtime() {
-//     this.copy('bowerrc', '.bowerrc');
-// };

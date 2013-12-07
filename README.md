@@ -7,7 +7,7 @@ A [Yeoman](http://yeoman.io) generator for getting started with [PhoneGap](http:
 
 This generator assumes you have a PhoneGap project ready to go. If not, [PhoneGap-CLI](https://github.com/phonegap/phonegap-cli) is a great place to start.
 
-Currently, you're limited to Angular unstable v1.2.0-rc.3. Future releases will be much more flexible.
+Projects are created using the latest version of the unstable branch from [Angular's nightly builds](http://ci.angularjs.org/job/angular.js-angular-master/lastSuccessfulBuild/artifact/build/).
 
 ## Usage
 
@@ -26,7 +26,7 @@ $ cd myAwesomeMobileApp
 
 ```
 $ yo angular-phonegap-seed
-``` 
+```
 
 ## Directory structure:
 
