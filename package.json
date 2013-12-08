@@ -1,6 +1,6 @@
 {
   "name": "generator-angular-phonegap-seed",
-  "version": "0.1.0",
+  "version": "0.6.0",
   "description": "A Yeoman generator for getting started with PhoneGap and AngularJS.",
   "keywords": [
     "yeoman-generator",
