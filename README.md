@@ -16,7 +16,7 @@ Projects are created using the latest version of the unstable branch from [Angul
 ```
 $ npm install -g generator-angular-phonegap-seed
 ```
-**Navigate to your PhoneGap project:**
+**Navigate to your previously created PhoneGap project:**
 
 ```
 $ cd myAwesomeMobileApp
@@ -27,6 +27,13 @@ $ cd myAwesomeMobileApp
 ```
 $ yo angular-phonegap-seed
 ```
+
+**Run the app on your platform of choice:**
+
+```
+$ phonegap run ios
+```
+
 
 ## Directory structure:
 
